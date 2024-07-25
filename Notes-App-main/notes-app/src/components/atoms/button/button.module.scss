@@ -1,0 +1,22 @@
+.button{
+    display: flex;
+    width: 320px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #F7685C;
+    color: var(--white);
+    gap: 10px;
+    border-radius: 8px;
+    margin:35px 0;
+
+    svg{
+        width:24px;
+        height: 24px;
+    }
+
+    h3{
+        font-size: var(--fs-lg);
+    }
+}

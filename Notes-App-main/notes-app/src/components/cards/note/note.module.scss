@@ -1,0 +1,79 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(251, 235, 149, 0.8);
+    box-sizing: border-box;
+    height: 210px; /* Fixed height to ensure uniformity */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.content {
+    flex: 1; /* Take available space */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Hide overflow */
+}
+
+p {
+    color: #3c3d43;
+    line-height: 25px;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: var(--fs-md);
+    font-weight: var(--fw-normal);
+    margin: 0;
+    transition: all 0.3s ease;
+}
+
+.expanded {
+    display: block;
+}
+
+.textarea {
+    height: 100%;
+    background-color: transparent;
+    resize: none;
+}
+
+button {
+    background-color: transparent;
+    color: var(--grey);
+    line-height: 20px;
+    cursor: pointer;
+    text-transform: capitalize;
+    margin-top: 5px;
+    align-self: flex-start;
+}
+
+.readMoreBtn {
+    background-color: transparent;
+    color: var(--blue);
+    border: none;
+    cursor: pointer;
+    font-size: var(--fs-sm);
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    font-size: var(--fs-sm);
+    color: var(--grey);
+    margin-top: auto;
+
+    .saveBtn {
+        padding: 8px;
+        background-color: var(--green);
+        border: none;
+        color: white;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-left: 5px;
+    }
+}

@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 70px 0 40px;
+
+    h2{
+        font-size: var(--fs-xxl);
+        font-weight: var(--fw-normal) !important;
+
+        span{
+            font-size: var(--fs-xxl);
+            font-weight: var(--fw-bold);
+        }
+    }
+
+    p{
+        color: #4d4d4d;
+        line-height: 30px;
+        font-size: var(--fs-md);
+    }
+}
